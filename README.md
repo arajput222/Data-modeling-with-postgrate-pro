@@ -13,9 +13,9 @@ Sparkify is a music streaming app.This Udacity Data Engineering nanodegree proje
 
 The star schema has 1 fact table (songplays), and 4 dimension tables (users, songs, artists, time). DROP, CREATE, INSERT, and SELECT queries are defined in sql_queries.py. create_tables.py uses functions 
 
-   SELECT COUNT(hour) FROM time;, hour of the day music most often listened to.
+   * SELECT COUNT(hour) FROM time;, hour of the day music most often listened to.
 
-   SELECT COUNT(hour) FROM time;base, drop_tables, and create_tables to create the database sparkifydb and the required tables.
+   * SELECT COUNT(hour) FROM time;base, drop_tables, and create_tables to create the database sparkifydb and the required tables.
 
 Extract, transform, load processes in etl.py populate the songs and artists tables with data derived from the JSON song files, data/song_data. Processed data derived from the JSON log files, data/log_data, is used to populate time and users tables. A SELECT query collects song and artist id from the songs and artists tables and combines this with log file derived data to populate the songplays fact table.
 
@@ -23,14 +23,14 @@ Extract, transform, load processes in etl.py populate the songs and artists tabl
 
 Day of the week music most frequently listened to.
 
-  SELECT COUNT(weekday) FROM time;
+  * SELECT COUNT(weekday) FROM time;
 
 Or, hour of the day music most often listened to.
 
-   SELECT COUNT(hour) FROM time;
+   * SELECT COUNT(hour) FROM time;
    
 Or, Simple queries might include number of users with each membership level.
 
-    SELECT COUNT(level) FROM users;
+    * SELECT COUNT(level) FROM users;
     
     
